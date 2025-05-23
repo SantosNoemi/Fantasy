@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>confirmar compra</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <img src="assets/img/logo.png" alt="Precify" class="Precify position-fixed top-50 start-50 translate-middle">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png" alt="Logo Precify" class="logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><i class="bi bi-house-door-fill me-1"></i> Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-calendar-check me-1"></i> Agende sua coleta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-info-circle me-1"></i> Como trabalhamos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-people-fill me-1"></i> Sobre</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="parceiroDropdown" data-bs-toggle="dropdown">
+              <i class="bi bi-handshake me-1"></i> Seja Nosso Parceiro
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class="bi bi-person-fill me-2"></i>Usuário</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-building me-2"></i>Empresa</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <div class="input-group">
+            <input class="form-control border-success" type="search" placeholder="Pesquisar...">
+            <button class="btn btn-light text-success" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--Container confirmação-->
+  <div class="container" id="carrinho">
+    <h2>CARRINHO</h2>
+
+    <div class="info">
+      <label>Material:</label>
+      <span id="material">Papel A4</span>
+    </div>
+
+    <div class="info">
+      <label>Quantidade:</label>
+      <span id="quantidade">10 unidades</span>
+    </div>
+
+    <div class="info">
+      <label>Peso (KG):</label>
+      <span id="peso">5</span>
+    </div>
+
+    <div class="info">
+      <label>Forma de Pagamento:</label>
+      <span id="formaPagamento">Cartão de Crédito</span>
+    </div>
+
+    <div class="info">
+      <label>Preço de Pagamento:</label>
+      <span id="pagamento">40,50 R$</span>
+    </div>
+
+    <div class="info">
+      <label>Endereço de Entrega:</label>
+      <span id="endereco">Rua das Flores, 123 - Centro</span>
+    </div>
+
+    <div class="buttons">
+      <button class="confirm" href="registro.html" onclick="confirmarCompra()">Confirmar Compra</button>
+      <button class="back" onclick="voltar()">Voltar</button>
+      <button class="cancel" onclick="cancelar()">Cancelar</button>
+    </div>
+  </div>
+
+  <script src="assets/js/confirmar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
